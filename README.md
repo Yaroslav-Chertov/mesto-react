@@ -1,6 +1,6 @@
 # Проект: Место
 
-[Проектная работа на GitHub Pages](https://yaroslav-chertov.github.io/mesto/)
+[Проектная работа на GitHub Pages](https://yaroslav-chertov.github.io/mesto-react/)
 
 ## Описание и функциональность
 
