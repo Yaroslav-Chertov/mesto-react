@@ -2,7 +2,7 @@
 
 [Ссылка на GitHub Pages](https://yaroslav-chertov.github.io/mesto-react/)
 
-## Создана в рамках учебы в [Яндекс.Практикум](https://praktikum.yandex.ru/) на курсе ["Веб-разработчик"](https://praktikum.yandex.ru/web/)
+## Создана в рамках обучения в [Яндекс.Практикум](https://praktikum.yandex.ru/) на курсе ["Веб-разработчик"](https://praktikum.yandex.ru/web/)
 
 ## Описание и функциональность
 
