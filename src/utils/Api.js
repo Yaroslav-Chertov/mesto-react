@@ -59,26 +59,19 @@ class Api {
         }).then(this._getJson);
     };
 
-    likeCard(id) {
-        return fetch(`${this._baseUrl}/cards/${id}/likes`, {
-            method: "PUT",
-            headers: this._getHeaders(),
-        }).then(this._getJson);
-    };
-
-    unlikeCard(id) {
-        return fetch(`${this._baseUrl}/cards/${id}/likes`, {
-            method: "DELETE",
-            headers: this._getHeaders(),
-        }).then(this._getJson);
-    };
-
     deleteCard(id) {
         return fetch(`${this._baseUrl}/cards/${id}`, {
             method: "DELETE",
             headers: this._getHeaders(),
         }).then(this._getJson);
     };
+
+    likeCardAndUnLike(id, isLiked) {
+        return fetch(`${this._baseUrl}/cards/${id}/likes`, {
+          method: isLiked ? "DELETE" : "PUT",
+          headers: this._getHeaders(),
+        }).then(this._getJson);
+      }
 };
 
 const api = new Api(
