@@ -19,16 +19,11 @@ function App() {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    api
-      .getCards()
-      .then((res) => setCards(res))
-      .catch((err) => console.log(err));
-  }, []);
-
-  useEffect(() => {
-    api
-      .getCurrentUser()
-      .then((res) => setCurrentUser(res))
+    Promise.all([api.getCurrentUser(), api.getCards()])
+      .then(([user, cards]) => {
+        setCurrentUser(user);
+        setCards(cards);
+      })
       .catch((err) => console.log(err));
   }, []);
 
