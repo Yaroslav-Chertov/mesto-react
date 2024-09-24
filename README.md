@@ -1,4 +1,4 @@
-# Проект: Место React
+# Место
 
 [Ссылка на GitHub Pages](https://yaroslav-chertov.github.io/mesto-react/)
 
